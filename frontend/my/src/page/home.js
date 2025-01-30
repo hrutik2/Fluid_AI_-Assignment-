@@ -80,8 +80,10 @@ const Home = () => {
 
   return (
     <Container>
+        <Div>
+            <h3>Task Management System</h3>
       <Button onClick={() => navigate("/add")}><b>+</b> Add Task</Button>
-
+      </Div>
       <TaskList>
         {tasks.length > 0 &&
           tasks.map((task) => (
@@ -121,6 +123,16 @@ const Container = styled.div`
   padding: 20px;
   text-align: center;
 `;
+const Div=styled.div`
+width:90%;
+margin:auto;
+display:flex;
+justify-content:space-between;
+margin-top: 10px;
+padding: 10px;
+padding-left: 20px;
+padding-right: 20px;
+`
 
 const Button = styled.button`
   padding: 10px 20px;
