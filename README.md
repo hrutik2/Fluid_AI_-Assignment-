@@ -1,7 +1,8 @@
-#Task Management API
+# Task Management API
 This API allows users to register, log in, and manage tasks. The application uses JWT authentication to secure endpoints. Users can create, read, update, and delete tasks
 <br/>
-#Technologies Used
+# Technologies Used
+<br/>
 1)node.js
 <br/>
 2)Express.js
@@ -9,7 +10,7 @@ This API allows users to register, log in, and manage tasks. The application use
 3)MongoDB with Mongoose
 <br/>
 
-#Installation
+# Installation
 1)Clone the repository
 <br/>
 git clone <https://github.com/hrutik2/Fluid_AI_-Assignment-.git>
