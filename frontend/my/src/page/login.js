@@ -16,12 +16,12 @@ const Login = () => {
       password: password,
     };
     axios
-      .post("https://worko-br76.onrender.com/user/login", formData)
+      .post("https://aa-1-7fan.onrender.com/user/login", formData)
       .then((res) => {
         console.log(res.data);
         alert(res.data.msg);
         localStorage.setItem("token", res.data.token);
-        // navigate("/home");
+         navigate("/home");
         setEmail("");
         setPassword("");
       })

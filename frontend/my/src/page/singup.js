@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Signup = () => {
+  const navigate=useNavigate()
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,10 +24,11 @@ const Signup = () => {
   const handleSubmit =  (e) => {
     e.preventDefault();
     console.log(formData)
-    axios.post('https://worko-br76.onrender.com/user/register', formData)
+    axios.post('https://aa-1-7fan.onrender.com/user/register', formData)
     .then((res) => {
         console.log(res)
         alert(res.data.msg)
+        navigate("/login")
     })
     .catch((err) => {
         console.log(err)
