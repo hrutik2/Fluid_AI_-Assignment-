@@ -5,6 +5,8 @@ import { MdDeleteForever } from "react-icons/md";
 import { RiEdit2Fill } from "react-icons/ri";
 import axios from "axios";
 
+
+
 const Home = () => {
   const navigate = useNavigate();
   const [tasks, setTasks] = useState([]);
@@ -184,6 +186,14 @@ const TaskList = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 30px;
   text-align: center;
+  @media (max-width: 450px) {
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  @media (max-width: 350px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+  }
 `;
 
 const TaskCard = styled.div`
