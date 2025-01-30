@@ -23,7 +23,7 @@ git clone <https://github.com/hrutik2/Fluid_AI_-Assignment-.git>
  <br/>
 npm start
  <br/>
-##Register User
+## Register User
 the endpoint for Register User :-/user/register
 
 <br/>
@@ -36,7 +36,7 @@ send this data in json format
 }
  <br/>
 
-##User Login
+## User Login
 the endpoint for login User :-/user/login
  <br/>
 send this data in json format
