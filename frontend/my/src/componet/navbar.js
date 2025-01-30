@@ -26,6 +26,14 @@ const Container=styled.div`
         display: flex;
         gap: 50px;
     }
+    @media (max-width: 400px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        div{
+            gap: 10px;
+        }
+        
+    }
 `
 
 const StyledLink=styled(Link)`
