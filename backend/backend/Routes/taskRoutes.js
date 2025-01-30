@@ -30,7 +30,7 @@ taskRoutes.post("/create",authMiddleware, async (req, res) => {
 
 taskRoutes.get("/",authMiddleware, async (req, res) => {
     try {
-        const tasks = await TaskModel.find();
+        const tasks = await TaskModel.find(req.body);
         res.status(200).send(tasks)
     } catch (error) {
         res.status(500).send({ msg: "Error fetching tasks", error: error.message })
