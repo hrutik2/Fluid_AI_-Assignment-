@@ -26,13 +26,13 @@ const Container=styled.div`
         display: flex;
         gap: 50px;
     }
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         padding-left: 10px;
         padding-right: 10px;
         div{
             gap: 10px;
         }
-        
+
     }
 `
 
