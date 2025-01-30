@@ -4,10 +4,9 @@ import styled from "styled-components";
     return(
         <Container>
             <StyledLink to="/">Home</StyledLink>
-            <div>
+            
             <StyledLink to="/login">Login</StyledLink>
-            <StyledLink to="/singup">Signup</StyledLink>
-            </div>
+           
             
         </Container>
     )

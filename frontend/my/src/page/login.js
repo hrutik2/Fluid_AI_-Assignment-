@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -49,6 +50,7 @@ const Login = () => {
         />
         <Button type="submit" >Login</Button>
       </Form>
+      <h3>Don't have an account? then first you need to register your account <b> <Link style={{textDecoration:"none",color:"blue"}} to="/singup">Signup</Link></b></h3>
     </Container>
   );
 };
