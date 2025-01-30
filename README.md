@@ -48,14 +48,46 @@ send this data in json format
 }
  <br/>
 
- #task 
+ # task 
   <br/>
-  ##creating
+  ## creating
    <br/>
 request:- POST 
 <br/>
 endpoint-/task/create
+<br/>
+body :-
+{
+  "title": "Complete project",
+  "description": "Finish the API development",
+  "dueDate": "2025-02-10",
+  "priority": "High",
+  "status": "Pending",
+  "userId": "user123"
+}
 
+## updting 
+   <br/>
+request:- patch
+<br/>
+endpoint- /task/update/:id
+<br/>
+
+
+## deleting
+   <br/>
+request:- POST 
+<br/>
+endpoint-/task/delete/:id
+<br/>
+
+## Getting the data
+
+  <br/>
+request:- get
+<br/>
+endpoint-/task/
+<br/>
 
 
 
